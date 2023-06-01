@@ -10,7 +10,7 @@ img {
 
 <br/>
 
-![A screenshot of Buzzfeed News' trending strip](images/trending-strip-screenshot.png "Buzzfeed News trending strip")
+![A screenshot of Buzzfeed News' trending strip](images/trending-strip-screenshot.png)
 
 *The Buzzfeed News trending strip*
 
