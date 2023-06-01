@@ -1,23 +1,62 @@
-# The Top Trending Buzzfeed News Articles by Year, Month, Week, and All-time
+---
+title: The Longest-Trending Buzzfeed News Articles Since Nov 2018 Overall, by Year, and by Month
+---
 
-![A screenshot of Buzzfeed News' trending strip](https://github.com/jsvine/buzzfeed-news-trending-strip/raw/main/misc/trending-strip-screenshot.png "Buzzfeed News trending strip")
+<style>
+img {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+</style>
+
+<br/>
+
+![A screenshot of Buzzfeed News' trending strip](images/trending-strip-screenshot.png "Buzzfeed News trending strip")
+
 *The Buzzfeed News trending strip*
 
-[Jeremy-Singer Vine](https://www.jsvine.com/) (of [Data is Plural](https://www.data-is-plural.com/) fame) set up a program that took snapshots of the "Trending" strip on Buzzfeed News every 5 minutes from Nov 2018 through the newsroom's final day of operation in May 2023.
+[Jeremy-Singer Vine](https://www.jsvine.com/) set up a program that took snapshots of the "Trending" strip on Buzzfeed News every 5 minutes from Nov 2018 through the newsroom's final day of operation in May 2023.
 
-I wanted to get a feel for which articles spent the most time on the trending strip over time, so I threw this together.
+He [published the dataset here](https://github.com/jsvine/buzzfeed-news-trending-strip).
 
-* The 20 longest-trending articles, all-time.
-* The longest-trending articles:
-  * By year
-  * By month
-  * By week
+**Buzzfeed News' trending strip was [curated by editors, not an algorithm](https://techcrunch.com/2018/07/18/buzzfeed-news/).**
 
-And, as a bonus, the 20 reporters whose articles spent the longest time in the trending strip.
+I wanted to get a feel for which articles spent the most time on the trending strip over time so I made this site.
 
-*Thanks to Jeremy for publishing [this dataset on Github](https://github.com/jsvine/buzzfeed-news-trending-strip).*
+Below you'll find links showing the longest-trending Buzzfeed News articles by year, month, and over the entire dataset's time frame.
 
-*Created by Vikram Oberoi ([Twitter](https://twitter.com/voberoi)) ([Blog](https://vikramoberoi.com)).*
+*Created by Vikram Oberoi ([Twitter](https://twitter.com/voberoi)) ([Blog](https://vikramoberoi.com)). The code for this site is [available on Github](https://github.com/voberoi).*
+
+*Thanks to Jeremy for scraping Buzzfeed News' trending strip and publishing [the dataset behind this site](https://github.com/jsvine/buzzfeed-news-trending-strip).*
+
+## All-time
+
+These all-time lists cover mid-November 2018 through the newsroom's final day of operation in May 2023.
+
+* [The 100 longest trending articles](/100-longest-trending-articles)
+* [The 100 longest trending reporters](/100-longest-trending-reporters)
+
+## Yearly
+
+These pages show the 50 longest trending articles in:
+
+* [2018](/yearly/2018)
+* [2019](/yearly/2019)
+* [2020](/yearly/2020)
+* [2021](/yearly/2021)
+* [2022](/yearly/2022)
+* [2023](/yearly/2023)
+
+## Monthly
+
+These pages show the 5 longest trending articles monthly in:
+
+* [2018](/monthly/2018)
+* [2019](/monthly/2019)
+* [2020](/monthly/2020)
+* [2021](/monthly/2021)
+* [2022](/monthly/2022)
+* [2023](/monthly/2023)
+
 
 ## How long did articles stay on the trending strip?
 

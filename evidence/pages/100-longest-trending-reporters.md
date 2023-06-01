@@ -2,7 +2,7 @@
 title: The 100 all-time longest-trending Buzzfeed News reporters
 ---
 
-463 reporters had articles show up on the trending strip from November 2018 onward.
+**463** reporters had articles show up on the trending strip from November 2018 onward.
 
 ``` top_reporters
 select

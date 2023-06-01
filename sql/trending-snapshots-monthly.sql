@@ -37,7 +37,7 @@ select
     url,
     month_trending_start,
     month_trending_end,
-    sum(seconds_trending)
+    sum(seconds_trending) as seconds_trending
 from articles
 group by 1, 2, 3
 

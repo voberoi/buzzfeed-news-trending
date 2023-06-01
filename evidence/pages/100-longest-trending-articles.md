@@ -20,7 +20,7 @@ limit 100;
 ```
 
 <DataTable data="{top_articles}", link="url" rows="100">
-  <Column id="article_social_image" contentType="image" width="100px" align="center" title="Social Image"/>
+  <Column id="article_social_image" contentType="image" width="75px" align="center" title="Social Image"/>
   <Column id="moment_trended_yyyy" title="Year" align="left"/>
   <Column id="days_trending" title="Days" align="left"/>
   <Column id="url" contentType="link", linkLabel="article_headline" title="Article" align="left"/>
