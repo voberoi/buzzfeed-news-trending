@@ -1,4 +1,3 @@
 .DS_Store
 .evidence/
-*.duckdb
 node_modules/
