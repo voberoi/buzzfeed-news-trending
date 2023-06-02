@@ -66,8 +66,7 @@
 	import { dev } from '$app/environment';
 
 	import TableOfContents from '$lib/TableOfContents.svelte';
-	import Header from '$lib/ui/Header.svelte';
-	import Sidebar from '$lib/BuzzfeedSidebar.svelte';
+	import Header from '$lib/BuzzfeedTrendingHeader.svelte';
 	import LoadingIndicator from '$lib/ui/LoadingIndicator.svelte';
 	import QueryStatus from '$lib/QueryStatus.svelte';
 
