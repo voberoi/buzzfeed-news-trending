@@ -85,7 +85,6 @@
 	<div class="header-bar">
 		<Header {fileTree} bind:open />
 	</div>
-	<Sidebar bind:open {fileTree} />
 	{#if !$navigating}
 		<main in:blur|local id="evidence-content">
 			<div class="content" class:settings-content={$page.url.pathname.startsWith('/settings')}>
