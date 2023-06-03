@@ -2,7 +2,20 @@
 title: The 100 all-time longest-trending Buzzfeed News reporters
 ---
 
-**463** reporters had articles show up on the trending strip from November 2018 onward.
+<style>
+    .same-line {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+</style>
+
+<span class="same-line">
+  <BigLink href="/100-longest-trending-articles">← 100 Longest Trending Articles</BigLink>
+  <BigLink href="/#All-time1">Home →</BigLink>
+</span>
+
+**463** reporters had articles show up on the trending strip from November 2018 onward until May 5th, 2023.
 
 ``` top_reporters
 select
@@ -29,3 +42,8 @@ limit 100
   <Column id="days_trending" title="Days Trending" align="center"/>
   <Column id="author_name" title="Name" align="left"/>
 </DataTable>
+
+<span class="same-line">
+  <BigLink href="/100-longest-trending-articles">← 100 Longest Trending Articles</BigLink>
+  <BigLink href="/#All-time1">Home →</BigLink>
+</span>

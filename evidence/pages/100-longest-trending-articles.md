@@ -6,9 +6,21 @@ title: The 100 all-time longest-trending Buzzfeed News articles
   import ArticleRow from '$lib/ArticleRow.svelte';
 </script>
 
-**8,952** unique articles appeared in the trending strip from mid-November 2018 onward.
 
-This table shows the year each article was written along with the # of days it spent in the trending strip.
+**8,952** unique articles appeared in the trending strip from mid-November 2018 until May 5th, 2023.
+
+<style>
+    .same-line {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+</style>
+
+<span class="same-line">
+  <BigLink href="/">← Home</BigLink>
+  <BigLink href="/100-longest-trending-reporters"> 100 Longest Trending Reporters →</BigLink>
+</span>
 
 ``` top_articles
 select
@@ -34,3 +46,9 @@ limit 100;
   when={article.year_trended}
 />
 {/each}
+
+<span class="same-line">
+  <BigLink href="/">← Home</BigLink>
+  <BigLink href="/yearly">Yearly</BigLink>
+  <BigLink href="/monthly">Monthly</BigLink>
+</span>
