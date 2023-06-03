@@ -18,7 +18,7 @@ title: The 100 all-time longest-trending Buzzfeed News articles
 </style>
 
 <span class="same-line">
-  <BigLink href="/#lists">← Home</BigLink>
+  <BigLink href="/">← Home</BigLink>
   <BigLink href="/100-longest-trending-reporters"> 100 Longest Trending Reporters →</BigLink>
 </span>
 

@@ -25,7 +25,6 @@ Below you'll find links showing the longest-trending Buzzfeed News articles by y
 *Created by Vikram Oberoi ([Twitter](https://twitter.com/voberoi)) ([Blog](https://vikramoberoi.com)). The code for this site is [available on Github](https://github.com/voberoi).*
 
 ## All-time
-<div style="margin: 0px; padding: 0px;" id="lists"/>
 
 These all-time lists cover mid-November 2018 through the newsroom's final day of operation in May 2023.
 
