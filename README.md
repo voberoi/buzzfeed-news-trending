@@ -15,6 +15,3 @@ TODO: update Makefile to mv the DuckDB file, add targets to run evidence dev and
 ## Contributing
 
 See an error? Please open a PR.
-
-There's also a way to template the yearly and monthly pages which I didn't do. Evidence's templating functionality is a bit wonky at the moment (May 2023),
-but I'd be happy to take a PR that DRYs up all that code if you are keen to do so.
