@@ -1,5 +1,9 @@
 ---
 title: The 100 all-time longest-trending Buzzfeed News reporters
+og:
+  title: The 100 all-time longest-trending Buzzfeed News reporters
+  description: The longest-trending Buzzfeed News articles based on a dataset of snapshots taken of the home page's "Trending" strip every 5 minutes from Nov 2018 until May 5th, when the newsroom shut down.
+  image: /images/og-image.png
 ---
 
 <style>
