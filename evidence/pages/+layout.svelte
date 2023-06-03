@@ -1,3 +1,13 @@
+<svelte:head>
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="buzzfeed-trending.vikramoberoi.com">
+  <meta property="twitter:url" content="https://buzzfeed-trending.vikramoberoi.com/">
+  <meta name="twitter:title" content="The Longest-Trending Buzzfeed News Articles Since Nov 2018 Overall, by Year, and by Month">
+  <meta name="twitter:description" content="The longest-trending Buzzfeed News articles based on a dataset of snapshots taken of the home page's "Trending" strip every 5 minutes from Nov 2018 until May 5th, when the newsroom shut down.">
+  <meta name="twitter:image" content="https://buzzfeed-trending.vikramoberoi.com/images/og-image.png">
+</svelte:head>
+
 <!-- This get's shipped with the template -- don't do local imports from $lib -->
 <script context="module">
 	// Import pages and create an object structure corresponding to the file structure
