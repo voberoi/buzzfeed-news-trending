@@ -1,5 +1,9 @@
 ---
 title: The Longest-Trending Buzzfeed News Articles Since Nov 2018 Overall, by Year, and by Month
+og:
+  title: The Longest-Trending Buzzfeed News Articles Since Nov 2018 Overall, by Year, and by Month
+  description: The longest-trending Buzzfeed News articles based on a dataset of snapshots taken of the home page's "Trending" strip every 5 minutes from Nov 2018 until May 5th, when the newsroom shut down.
+  image: /images/og-image.png
 ---
 
 <style>
