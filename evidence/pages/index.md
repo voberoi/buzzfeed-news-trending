@@ -26,7 +26,7 @@ He [published the dataset here](https://github.com/jsvine/buzzfeed-news-trending
 
 Below you'll find links showing the longest-trending Buzzfeed News articles by year, month, and over the entire dataset's time frame.
 
-*Created by Vikram Oberoi ([Twitter](https://twitter.com/voberoi)) ([Blog](https://vikramoberoi.com)). The code for this site is [available on Github](https://github.com/voberoi).*
+*Created by Vikram Oberoi ([Twitter](https://twitter.com/voberoi)) ([Blog](https://vikramoberoi.com)). The code for this site is [available on Github](https://github.com/voberoi/buzzfeed-news-trending).*
 
 ## All-time
 
