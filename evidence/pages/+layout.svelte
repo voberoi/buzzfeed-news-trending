@@ -1,4 +1,7 @@
 <svelte:head>
+  <!-- Plausible -->
+  <script defer data-domain="buzzfeed-trending.vikramoberoi.com" src="https://plausible.io/js/script.js"></script>
+
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta property="twitter:domain" content="buzzfeed-trending.vikramoberoi.com">
