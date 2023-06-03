@@ -20,13 +20,9 @@ He [published the dataset here](https://github.com/jsvine/buzzfeed-news-trending
 
 **Buzzfeed News' trending strip was [curated by editors, not an algorithm](https://techcrunch.com/2018/07/18/buzzfeed-news/).**
 
-I wanted to get a feel for which articles spent the most time on the trending strip over time so I made this site.
-
 Below you'll find links showing the longest-trending Buzzfeed News articles by year, month, and over the entire dataset's time frame.
 
 *Created by Vikram Oberoi ([Twitter](https://twitter.com/voberoi)) ([Blog](https://vikramoberoi.com)). The code for this site is [available on Github](https://github.com/voberoi).*
-
-*Thanks to Jeremy for scraping Buzzfeed News' trending strip and publishing [the dataset behind this site](https://github.com/jsvine/buzzfeed-news-trending-strip).*
 
 ## All-time
 
