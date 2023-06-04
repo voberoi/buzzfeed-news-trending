@@ -34,10 +34,10 @@ select
 from (
     select
        trending_articles.url as url,
-       unnest(article_metadata.authors) as author,
+       unnest(article_metadata_canonical_urls_only.authors) as author,
        seconds_trending / 60.0 / 60.0 / 24.0 as days_trending
-    from article_metadata, trending_articles
-    where trending_articles.url = coalesce(article_metadata.redirect_url, article_metadata.article_url) and
+    from article_metadata_canonical_urls_only, trending_articles
+    where trending_articles.url = article_metadata_canonical_urls_only.article_url and
           trending_articles.earliest_time_trended < timestamp'2023-04-19'
     order by days_trending desc
 )

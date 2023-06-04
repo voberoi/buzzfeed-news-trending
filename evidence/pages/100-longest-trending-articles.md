@@ -33,12 +33,12 @@ og:
 select
    row_number() over (order by seconds_trending desc) as rank,
    trending_articles.url as url,
-   article_metadata.article_social_image as article_social_image,
-   article_metadata.article_headline as article_headline,
+   article_metadata_canonical_urls_only.article_social_image as article_social_image,
+   article_metadata_canonical_urls_only.article_headline as article_headline,
    date_part('year', latest_time_trended) as year_trended,
    seconds_trending / 60.0 / 60.0 / 24.0 as days_trending
-from article_metadata, trending_articles
-where trending_articles.url = coalesce(article_metadata.redirect_url, article_metadata.article_url) and
+from article_metadata_canonical_urls_only, trending_articles
+where trending_articles.url = article_metadata_canonical_urls_only.article_url and
       trending_articles.earliest_time_trended < timestamp'2023-04-19'
 order by days_trending desc
 limit 100;
