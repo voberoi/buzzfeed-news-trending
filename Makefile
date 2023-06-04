@@ -1,4 +1,14 @@
-all: buzzfeed-trending.duckdb
+build: duckdb evidence-install
+	cd evidence; npm run build
+
+dev: duckdb evidence-install
+	cd evidence; npm run dev
+
+evidence-install:
+	cd evidence; npm install
+
+duckdb: buzzfeed-trending.duckdb
+	mv buzzfeed-trending.duckdb evidence.duckdb
 
 buzzfeed-trending.duckdb:
 	duckdb buzzfeed-trending.duckdb -init sql/stg-article-metadata.sql -no-stdin
