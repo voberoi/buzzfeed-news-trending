@@ -110,4 +110,4 @@ Here's the distribution of the # of days these articles remained on the trending
 
 <Histogram data={days_trending_by_article_without_outlier_and_final_stretch} x=days_trending xAxisTitle="Days spent trending" yAxisTitle="# Articles"/>
 
-The longest-trending lists only use articles that appeared on the trending bar before April 19th, 2023.
+The longest-trending lists only use articles that appeared on the trending strip before April 19th, 2023.

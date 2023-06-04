@@ -28,6 +28,8 @@ create table trending_articles_yearly as (
 with articles as (
     select
         unnest(urls) as url,
+        timestamp_first as earliest_time_trended,
+        timestamp_last as latest_time_trended,
         year_trending_start,
         year_trending_end,
         seconds_trending
@@ -38,6 +40,8 @@ select
     url,
     year_trending_start,
     year_trending_end,
+    min(earliest_time_trended) as earliest_time_trended,
+    max(latest_time_trended) as latest_time_trended,
     sum(seconds_trending) as seconds_trending
 from articles
 group by 1, 2, 3

@@ -19,7 +19,11 @@ og:
   <BigLink href="/">Home →</BigLink>
 </span>
 
-**463** reporters had articles show up on the trending strip from November 2018 onward until May 5th, 2023.
+*The newsroom closed on May 5th, 2023.*
+
+*This list omits time accrued from articles that trended from April 19th, 2023 onward because the newsroom stopped updated the trending strip that day.*
+
+***463*** *reporters had articles show up on the trending strip from November 2018 onward until April 19th, 2023.*
 
 ``` top_reporters
 select
@@ -33,7 +37,8 @@ from (
        unnest(article_metadata.authors) as author,
        seconds_trending / 60.0 / 60.0 / 24.0 as days_trending
     from article_metadata, trending_articles
-    where trending_articles.url = coalesce(article_metadata.redirect_url, article_metadata.article_url)
+    where trending_articles.url = coalesce(article_metadata.redirect_url, article_metadata.article_url) and
+          trending_articles.earliest_time_trended < timestamp'2023-04-19'
     order by days_trending desc
 )
 group by 1, 2, 3
