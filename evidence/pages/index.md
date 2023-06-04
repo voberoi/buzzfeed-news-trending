@@ -60,35 +60,54 @@ These pages show the 5 longest trending articles monthly in:
 
 ## How long did articles stay on the trending strip?
 
-```hours_trending_by_article
+```days_trending_by_article
 select
     url,
     earliest_time_trended,
     latest_time_trended,
-    seconds_trending / 60.0 / 60.0 as hours_trending
+    seconds_trending / 60.0 / 60.0 / 24.0 as days_trending
 from trending_articles
 order by 3 desc
 ```
 
-```hours_trending_by_article_without_outlier
-select * from ${hours_trending_by_article} where hours_trending < 1000
+```days_trending_by_article_without_outlier
+select * from ${days_trending_by_article} where days_trending < 40
 ```
 
+```days_trending_by_article_without_outlier_and_final_stretch
+select * from ${days_trending_by_article} where days_trending < 40 and earliest_time_trended < timestamp '2023-04-19'
+```
+
+```median_days_trending
+select median(days_trending) as median_days_trending from ${days_trending_by_article}
+```
 
 ```median_hours_trending
-select median(hours_trending) as median_hours_trending from ${hours_trending_by_article}
+select median(days_trending) * 24 as median_days_trending from ${days_trending_by_article}
 ```
 
-The median time an article spent in the trending strip was **<Value data={median_hours_trending}/>** hours.
+The median time an article spent in the trending strip was **<Value data={median_days_trending}/>** days or **<Value data={median_hours_trending}/>** hours.
 
-This is the distribution of hours articles spent on the trending strip:
+This is the distribution of the number of days articles spent on the trending strip:
 
-<Histogram data={hours_trending_by_article} x=hours_trending/>
+<Histogram data={days_trending_by_article} x=days_trending xAxisTitle="Days spent trending" yAxisTitle="# Articles"/>
 
-This is how long every article that appeared on the trending strip remained on it, chronologically:
+The vast majority of articles spent less than 1 day on the trending strip. This is how long every article that appeared on the trending strip remained on it, chronologically:
 
-<BarChart data={hours_trending_by_article} x=earliest_time_trended y=hours_trending />
+<BarChart data={days_trending_by_article} x=earliest_time_trended y=days_trending xAxisTitle="When article trended" yAxisTitle="Days spent trending"/>
 
-Let's remove the massive outlier in 2020 and look again:
+Let's remove [the massive outlier in 2020](/yearly/2020) and look again:
 
-<BarChart data={hours_trending_by_article_without_outlier} x=earliest_time_trended y=hours_trending />
+<BarChart data={days_trending_by_article_without_outlier} x=earliest_time_trended y=days_trending xAxisTitle="When article trended" yAxisTitle="Days spent trending" />
+
+On April 19th, 2023 the newsroom stopped updating the Trending bar before it shut down on May 5th, 2023. You can see this in the stack of articles at the very end of the chart above.
+
+Let's remove those and look again:
+
+<BarChart data={days_trending_by_article_without_outlier_and_final_stretch} x=earliest_time_trended y=days_trending xAxisTitle="When article trended" yAxisTitle="Days spent trending" />
+
+Here's the distribution of the # of days these articles remained on the trending strip:
+
+<Histogram data={days_trending_by_article_without_outlier_and_final_stretch} x=days_trending xAxisTitle="Days spent trending" yAxisTitle="# Articles"/>
+
+The longest-trending lists only use articles that appeared on the trending bar before April 19th, 2023.
