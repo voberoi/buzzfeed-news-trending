@@ -23,7 +23,7 @@ og:
 
 *This list omits time accrued from articles that trended from April 19th, 2023 onward because the newsroom stopped updated the trending strip that day.*
 
-***463*** *reporters had articles show up on the trending strip from November 2018 onward until April 19th, 2023.*
+***463*** *reporters had articles show up on the trending strip from November 2018 until April 19th, 2023.*
 
 ``` top_reporters
 select
