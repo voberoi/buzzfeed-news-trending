@@ -8,9 +8,19 @@ This site uses [Evidence](https://evidence.dev), a static site generator purpose
 
 ## Running locally
 
-You must have DuckDB installed on your machine.
+You must have DuckDB & npm installed on your machine.
 
-TODO: update Makefile to mv the DuckDB file, add targets to run evidence dev and build.
+* `make` will process data, move it to `evidence/`, and build the Evidence site.
+* `make dev` will process data, move it to `evidence/`, and run Evidence in dev mode.
+* `make duckdb` will process data and move it to `evidence/`.
+
+## Source data
+
+There are three files in `source-data/`:
+
+* `bfn-trending-strip-deduped.tsv`: This is Jeremy's dataset from [this Github repo](https://github.com/jsvine/buzzfeed-news-trending-strip).
+* `article-metadata.jsonl`: This is metadata I scraped from Buzzfeed News using Jeremy's dataset. Note that there are duplicates in the original dataset because each snapshot references URLs used at that time. If the URLs changed, Buzzfeed News redirected the original URLs. The article metadata contains duplicate rows if an article showed up multiple times with different URLs, but each record contains `redirect_url` as well so you know what the canonical URL is.
+* `authors.jsonl`: This is metadata I scraped from Buzzfeed News for each reporter I found in `article-metadata.jsonl`.
 
 ## Contributing
 
